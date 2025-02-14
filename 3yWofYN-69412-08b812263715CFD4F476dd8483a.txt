@@ -1,0 +1,86 @@
+X-ETP-Message-Attributes: eyJ0eXBlIjoianNvbiIsImNvbnRlbnQiOnsiYW50aXNwYW1fZW5hYmxlZCI6InRydWUiLCJhbnRpdmlydXNfZW5hYmxlZCI6InRydWUiLCJkb2RfZW5hYmxlZCI6InRydWUiLCJtYWxpY2lvdXMiOiJ0cnVlIiwidGlkIjoiM3lXb2ZZTi02OTQxMi0wOGI4MTIyNjM3MTVDRkQ0RjQ3NmRkODQ4M2EifX0=
+Return-Path: <brunnosaid@gmail.com>
+X-ETP-TRAFFIC-TYPE: inbound
+X-ETP-ACCEPTED-TIMESTAMP: 20241203182916
+X-Client-Mode: 1
+X-ETP-TENANT-ID: 0002503766
+X-ETP-DOMAIN-NAME: altaicait.com.br
+X-ETP-DOMAIN-ID: 69412
+X-ETP-CLIENT-TAG: ALTAICA-IT-SERV
+X-ETP-CLIENT-ID: 7442
+X-ETP-821-FROM: brunnosaid@gmail.com
+X-ETP-ACCEPTED-TIMESTAMP-EPOCH: 1733250556
+X-RECEIVED-CC: us
+X-FE-ETP-SENDER-IP: 209.85.208.173
+X-FE-ETP-CONNECTING-IP: 209.85.208.173
+X-RECEIVED-IP: 209.85.208.173
+Authentication-Results: mta-643920.us.email.fireeyecloud.com;
+	dmarc=pass (p=none; dis=none) header.from=gmail.com
+Received: from mail-lj1-f173.google.com (mail-lj1-f173.google.com [209.85.208.173])
+	by prd08-usw2-18 (envelope-from <brunnosaid@gmail.com>)
+	FireEye ETP with ESMTPS (cipher=TLS_AES_128_GCM_SHA256)
+	id 3yWofYN-69412-08b812263715CFD4F476dd8483a; batch_id 81/22-63715-CFD4F476; Tue,  3 Dec 2024 18:29:16 +0000 (UTC)
+Received: by mail-lj1-f173.google.com with SMTP id 38308e7fff4ca-2ffd6b7d77aso71514331fa.0
+        for <leandro@altaicait.com.br>; Tue, 03 Dec 2024 10:29:16 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1733250554; x=1733855354; darn=altaicait.com.br;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=EpoZa40Lfw8IpRou5PKv6UafOR4op2qShukJ/c1VjEQ=;
+        b=MOnkDqv6L6XYEJPO6wk9mo44imF7a6nlrZi6NKFRIvQbk8fwazGh4w+LGlcm8A/zet
+         QVrcWdc8+0FC2GmvjZmvt+EED3Tzqt+9GzouOsWgvEQgczrgYF/vSFsh7T32KFbYnh8D
+         ID83dB00tT3dXX0rAnHMu6YjOOv7bwl8SCly/gzRbxZFTr8BGsYZXy1sApx+4TsmdcWR
+         pg5I1sc+X9hkjB+L/LHLwHu35WOR16SeciAVzDzpotR5odRxBM215Nu6JkndkPO2Hkui
+         mJjsbeo2LI1fV/GVsIKInaWfiff3dPlpPYnK8x0PSLuDT2hnpLvBN49pFi7JFpEcXJG9
+         tJeg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1733250554; x=1733855354;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=EpoZa40Lfw8IpRou5PKv6UafOR4op2qShukJ/c1VjEQ=;
+        b=sQiRYgtfSD+2TgbS94owVHKapTks6sItY/V6WTNw4qgXsZgsoz9bAmvYhJQC+kwBOk
+         P8C7zWaIf7u4kYYSrZN1b/300+eEJ8xCPwZbJ02bUBCVs0huXjkRMk+MXJ9hJ6pUsHyp
+         rmZHcyXWo0PNOWkyKrfebq3n64RFxCuueILZsH+QhVFDHcChOQwuIlFCrHa4vV+d6qmj
+         jTjotr5IIeQ7r9xwBzibzdJx+rxSDgueuxX/1ACwyElLMJIcGadnJ0seMVYGezHKbaSr
+         YnrYlE2W7t+b1XVqA60h2hTPp33Mu0fQ7xYEiRGMRi0PsQHNEgUEq1aNqco4m0X6sazw
+         19wg==
+X-Gm-Message-State: AOJu0YyV2NoW5tWeTfuYpkDI5uB1YJ34Zo29nADd4G8e9GjmFmV8kaNT
+	EA/6uRCE5FDh3T+ygCTb0J5ubGCNQnXqzLb+QFjFSI6n7BxC7vsiqRfQSp/rytIX/dPjLzRVLQy
+	Qr0YhVJc/PdiRck8/Y8Cw9I6V3tS7nnZK
+X-Gm-Gg: ASbGncvZf9CuQYs5TZslZTeZx8cihc7XsVgnX3HsMzouXjlTBsMwrrjqsYCuD509SlI
+	w4I4p3In5+ihzf+NLr9kJq+EMIhKwM/C3SnJxKQgjy9Q5dplYMgOBKtyTly5vwHhU
+X-Google-Smtp-Source: AGHT+IHPUvH9kOrC7x+fD5rX3MVgS56YjrGAxuySI36H9CBonAGxyY++k59OjcS+z19RoD9c2krgINaRbrDhE27zvuY=
+X-Received: by 2002:a05:651c:b12:b0:2fb:30d5:669f with SMTP id
+ 38308e7fff4ca-30009bd559dmr23269641fa.7.1733250554197; Tue, 03 Dec 2024
+ 10:29:14 -0800 (PST)
+MIME-Version: 1.0
+From: Brunno Said Totaro <brunnosaid@gmail.com>
+Date: Tue, 3 Dec 2024 15:29:03 -0300
+Message-ID: <CAJY5W_pU-9sTP36Fna9PB7egvKjVTpB+TgtJ48F6ubcEenzeLg@mail.gmail.com>
+Subject: Not WannaCry
+To: leandro@altaicait.com.br
+Content-Type: multipart/alternative; boundary="0000000000009702ef062861d7cf"
+X-FE-ETP-METADATA: eyAidGlkIjogIjN5V29mWU4tNjk0MTItMDhiODEyMjYzNzE1Q0ZENEY0NzZkZDg0ODNhIiwgImFj
+ Y2VwdGVkX3RpbWVzdGFtcCI6ICIyMDI0MTIwMzE4MjkxNiIsICJhY2NlcHRlZF90aW1lc3RhbXBf
+ ZXBvY2giOiAiMTczMzI1MDU1NiIsICJkb21haW5fbmFtZSI6ICJhbHRhaWNhaXQuY29tLmJyIiwg
+ ImF0dF9jb3VudCI6IC0yLCAic3JjX2lwIjogIjIwOS44NS4yMDguMTczIiB9
+
+--0000000000009702ef062861d7cf
+Content-Type: text/plain; charset="UTF-8"
+
+https://protect2.fireeye.com/v1/url?k=31323334-501cfaeb-31140762-454455535732-dbf55efc1eeb91c9&q=1&e=5cd5cfd5-8514-4070-bc28-7375363c620a&u=https%3A%2F%2Fgithub.com%2Ffabrimagic72%2Fmalware-samples%2Fblob%2Fmaster%2FRansomware%2FWannacry%2F697158bcade7373ccc9e52ea1171d780988fc845d2b696898654e18954578920.zip
+
+--0000000000009702ef062861d7cf
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><a href=3D"https://protect2.fireeye.com/v1/url?k=3D3132333=
+4-501cfaeb-31140762-454455535732-dbf55efc1eeb91c9&amp;q=3D1&amp;e=3D5cd5cfd=
+5-8514-4070-bc28-7375363c620a&amp;u=3Dhttps%3A%2F%2Fgithub.com%2Ffabrimagic=
+72%2Fmalware-samples%2Fblob%2Fmaster%2FRansomware%2FWannacry%2F697158bcade7=
+373ccc9e52ea1171d780988fc845d2b696898654e18954578920.zip">https://github.co=
+m/fabrimagic72/malware-samples/blob/master/Ransomware/Wannacry/697158bcade7=
+373ccc9e52ea1171d780988fc845d2b696898654e18954578920.zip</a><br></div>
+=0D=
+
+--0000000000009702ef062861d7cf--
